@@ -1,0 +1,33 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  height: 100vh;
+  background: #161513;
+  color: white;
+  font-family: outfit;
+
+}
+
+.background-img{
+  background-image: url("../src/assets/home-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+
+}
+.background-img::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.735); 
+  z-index: -1; 
+}
